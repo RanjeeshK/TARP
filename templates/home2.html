@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+rel="stylesheet"
+/>
+<style>
+.card-title{
+  font-size: 1rem;
+  color:black;
+}
+.card{
+  border-color: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #E91E63;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: auto;
+  top:120px;
+  padding-left: 10px;
+  border-color: aqua;
+  position:relative;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-color: red;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.btn-colour{
+  background-color: #42A5F5;
+}
+/* Remove extra left and right margins, due to padding in columns */
+  /* .row {  /*margin: auto; */
+  /* width: 50%; */
+  /* padding: 10px;
+  top:30px;
+}  */
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+</style>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">CHOPSHOP</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/project">Project</a>
+            </div>
+          </div>
+
+          <ul class="navbar-nav d-flex flex-row me-1">
+            <li class="nav-item me-3 me-lg-0">
+                <a class="nav-link text-white" href="/contact"><i class="fas fa-envelope mx-1"></i> Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                data-mdb-toggle="dropdown" aria-expanded="false"> <i class="fas fa-user mx-1"></i> Profile </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li>
+                        <a class="dropdown-item" href="/home2">My account</a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-item" href="/">Log out</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        </div>
+      </nav>
+    </section>
+
+    <section>
+       <div class="row">
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4>Shop Menu</h4>
+              <p class="card-text">To book a salon service appointment</p>
+              <a href="/shopmenu" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4>Doctor Appointment</h4>
+              <p class="card-text">Book an appointment with our in house dermatologist for consulting</p>
+              <a href="/drappoint" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4>Shopkeeper Registration</h4>
+              <p class="card-text">Want to post your business online? Register Here!!</p>
+              <a href="/EmployerReg" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h4>Product Recommendation</h4>
+              <p class="card-text">Have any problems with your hair? Take a survey and find products that can help</p>
+              <a href="/product" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+  </body>
+</html>
