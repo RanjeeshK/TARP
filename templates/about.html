@@ -4,6 +4,86 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About</title>
+    <style>
+      body {
+        background: linear-gradient(45deg , #E91E63, #42A5F5);
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        height: 100px;
+      }
+      
+      .header img {
+        margin-right: 10px;
+      }
+      
+      .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 50px;
+      }
+      
+      .maker-boxes {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+      }
+      
+      .maker-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+        margin: 0 20px;
+      }
+      
+      .maker-box:hover {
+        transform: translateY(-10px);
+      }
+      
+      .maker-photo {
+        width: 150px;
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+      
+      .maker-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+      }
+      
+      .maker-info h2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      
+      .maker-info p {
+        margin: 0;
+      }
+    </style>
     <!-- Font Awesome -->
 <link
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -47,7 +127,54 @@ rel="stylesheet"
         </div>
       </nav>
     </section>
+
+    <section>
+      <div class="header">
+        <h1>About Us</h1>
+      </div>
+      
+      <div class="about-us">
+        <p>Welcome to Chop Shop, an online salon service booking platform! We are a team of enthusiastic students, pursuing Artificial Intelligence and Machine Learning, working on our TARP project under the guidance of faculties Dr. Suganya G and Dr. Pradeep Kumar.</p>
+        <p>
+    Our project is an online salon service booking system that allows you to book salon appointments with just a few clicks. But we didn't stop there. We also incorporated dermatologist services into our platform, providing our customers with an all-in-one solution for their beauty and skin care needs.
+        </p>
+        <p>
+    But that's not all. Our platform also includes a machine learning-based product recommendation system. This system uses your booking history and skin type to recommend personalized beauty products that cater to your unique needs.
+        </p>
+        <p>
+    We are proud to announce that our project has been developed using Django, a high-level Python web framework. We are confident that our platform will provide a seamless experience for all our customers, and we hope you enjoy using Chop Shop as much as we enjoyed developing it.
+    </p>
+      </div>
+      
+      <div class="maker-boxes">
+        <div class="maker-box">
+          <div class="maker-photo" style="background-image: url('maker-photo-1.jpg');"></div>
+          <div class="maker-info">
+            <h2>Devanshu Khemka</h2>
+            <p>20BAI1319</p>
+          </div>
+        </div>
+        
+        <div class="maker-box">
+          <div class="maker-photo" style="background-image: url('maker-photo-2.jpg');"></div>
+          <div class="maker-info">
+            <h2>Ranjeesh Kaippadda</h2>
+            <p>20BAI1311</p>
+          </div>
+        </div>
+        
+        <div class="maker-box">
+          <div class="maker-photo" style="background-image: url('maker-photo-2.jpg');"></div>
+          <div class="maker-info">
+            <h2>Aryan Singh Kushwaha</h2>
+            <p>20BAI1288</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- MDB -->
+
+
 <script
 type="text/javascript"
 src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
