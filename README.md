@@ -1,4 +1,4 @@
 # Information
-Will be added later
+Will be added later.
 ## sub
-My first github update.
+Will be added later.
